@@ -38,7 +38,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
     flex-wrap: wrap;
     
 }
@@ -64,30 +64,25 @@ header{
 }
 ul{
     display: flex;
-    justify-content: center;
-    
-    
 }
 li{
     padding:5px 20px;
     font-size: 14px;
     border-left: 1px solid #000;
-    
-    }
+}
     
 li:first-child{
-        border-left: none;
+    border-left: none;
 }
 
 
 @media screen and (max-width: 767px){
+    header,ul { 
+        display: block;}
 
-header,ul { display: block;}
-
-li {border-left: none;
-    width: 90px;
-    border-bottom: 1px solid #000;
-text-align: center;}
-    
-
+    li {
+        border-left: none;
+        width: 90px;
+        border-bottom: 1px solid #000;
+        text-align: center;}
 }
